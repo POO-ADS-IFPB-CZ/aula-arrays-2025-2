@@ -1,22 +1,16 @@
 public class Main {
 
     public static void main(String[] args) {
-
-        int numeros[] = {2,6,1,0,4,7};
-
-        for(int i=0; i<numeros.length;i++){
-            numeros[i]++;
-        }
-
-        //Não reflete no array
-        for(int i : numeros){
-            i++;
-        }
-
-        for(int i: numeros){
-            System.out.println(i);
-        }
-
+        int array[] = {2,3,4,5};
+        incrementar(array);
+        for(int i:array) System.out.println(i);
     }
+
+    public static void incrementar(int array[]){
+        for(int i=0;i<array.length;i++){
+            array[i]++;
+        }
+    }
+
 
 }

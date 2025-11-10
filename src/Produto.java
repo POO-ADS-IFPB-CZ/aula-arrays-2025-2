@@ -1,4 +1,4 @@
-public class Produto {
+public class Produto implements Comparable<Produto> {
 
     private int codigo;
     private String descricao;
@@ -41,5 +41,10 @@ public class Produto {
                 ", descricao='" + descricao + '\'' +
                 ", preco=" + preco +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Produto outro) {
+        return descricao.compareTo(outro.descricao);
     }
 }

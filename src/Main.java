@@ -5,9 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int array[] = new int[100];
-        Arrays.fill(array, 5);
-        System.out.println(Arrays.toString(array));
+        int numeros[] = {4,8,0,1,3,5,9,3};
+        numeros = Arrays.copyOf(numeros, 20);
+        System.out.println(Arrays.toString(numeros));
 
     }
 }

@@ -1,16 +1,19 @@
 public class Main {
 
     public static void main(String[] args) {
-        int array[] = {2,3,4,5};
-        incrementar(array);
-        for(int i:array) System.out.println(i);
-    }
 
-    public static void incrementar(int array[]){
-        for(int i=0;i<array.length;i++){
-            array[i]++;
+        int matriz[][] = new int[3][];
+        matriz[0] = new int[6];
+        matriz[1] = new int[2];
+        matriz[2] = new int[4];
+
+        for(int i=0;i<matriz.length;i++){
+            for(int j=0;j<matriz[i].length;j++){
+                System.out.print(matriz[i][j]+" ");
+            }
+            System.out.println();
         }
+
+
     }
-
-
 }
